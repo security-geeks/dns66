@@ -140,10 +140,10 @@ public class StartFragment extends Fragment {
                 stateImage.setImageDrawable(context.getDrawable(R.drawable.ic_settings_black_24dp));
                 startButton.setText(R.string.action_stop);
                 break;
-            case AdVpnService.VPN_STATUS_STOPPED:
-                stateImage.setImageDrawable(context.getDrawable(R.mipmap.app_icon_large));
+            case AdVpnService.VPN_STATUS_STOPPED:Fi
                 stateImage.setImageAlpha(32);
                 stateImage.setImageTintList(null);
+                stateImage.setImageDrawable(context.getDrawable(R.mipmap.app_icon_large));
                 startButton.setText(R.string.action_start);
                 break;
             case AdVpnService.VPN_STATUS_RUNNING:
